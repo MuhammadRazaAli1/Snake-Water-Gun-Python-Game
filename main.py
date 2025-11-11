@@ -1,12 +1,12 @@
 import random 
 
-for game in range(1, 1111):
+for score in range(1, 1111):
  user_dict = {"w" : "water" , "g" : "gun" , "s" : "snake"}
  computer_choose = random.choice(["w" , "g" , "s"])
  player = input("Enter your choice: ")
  print(f"You choose {user_dict[player]}\nComputer choose {user_dict[computer_choose]}")
 
- if computer_choose == player :
+ if computer_choose == player:
     print(f"It's draw!")
  else:
     if (computer_choose == "w") and (player == "g"):
